@@ -41,7 +41,7 @@ namespace AzureFunctionForSplunk
             TraceWriter log)
         {
             var runner = new Runner();
-            await runner.Run<ActivityLogMessages, ActivityLogsSplunkEventMessages>(messages, blobFaultBinder, queueFaultBinder, log);
+            await runner.Run<AzureADLogMessages, AzureADLogsSplunkEventMessages>(messages, blobFaultBinder, queueFaultBinder, log);
         }
     }
 }
