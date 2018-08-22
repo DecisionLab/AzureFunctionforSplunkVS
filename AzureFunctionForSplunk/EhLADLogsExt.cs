@@ -32,7 +32,7 @@ using System.Threading.Tasks;
 
 namespace AzureFunctionForSplunk
 {
-    public static class EhLADLogsExt.cs
+    public static class EhLADLogsExt
     {
         [FunctionName("EhLADLogsExt.cs")]
         public static async Task Run(
