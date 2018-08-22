@@ -34,7 +34,7 @@ namespace AzureFunctionForSplunk
 {
     public static class EhLADLogsExt
     {
-        [FunctionName("EhLADLogsExt.cs")]
+        [FunctionName("EhLADLogsExt")]
         public static async Task Run(
             [EventHubTrigger("%input-hub-name-lad-logs%", Connection = "hubConnection")]string[] messages,
             IBinder blobFaultBinder,
